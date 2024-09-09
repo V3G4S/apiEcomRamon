@@ -22,7 +22,17 @@ const login = async (req, res) => {
             res.send({error: 'a senha não é válida'})
         }
 
-        res.send({message: 'ok'})
+        const token = jwt.sign(
+            {
+                nome: cliente.nome,
+                email: cliente.email,
+                _id: cliente.id
+            },
+            'jwt_secret_key',
+            {expiresIn: 1000*60*60*24*365}
+        )
+
+        res.cookie("TokenAulaBE", token).send({message:'ok'})
     }catch(e){
         console.log(e)
     }
