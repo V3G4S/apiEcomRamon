@@ -1,1 +1,140 @@
-{"produtos":[{"id":2,"nome":"Camiseta","descricao":"Camiseta de algodão","preco":30,"categoria_id":2,"imagem":"camiseta.jpg"},{"id":3,"nome":"Vaso de Flores","descricao":"Vaso de flores decorativo","preco":50,"categoria_id":3,"imagem":"vaso_flores.jpg"},{"nome":"produto teste","descricao":"uma descricao qualquer","preco":600,"imagem":"foto.jpg","id":"e8801215-9b11-4a43-b979-344afccbfcc9"},{"nome":"produto teste2","descricao":"uma descricao qualquer","preco":700,"imagem":"foto.jpg","id":"fde550fa-7f2b-4560-bff7-5011f67b6757"},{"nome":"produto teste2","descricao":"uma descricao qualquer","preco":700,"imagem":"foto.jpg","id":"cd3b9cb7-b563-44c0-93d0-d1fc538a5de6"},{"nome":"produto teste2","descricao":"uma descricao qualquer","preco":700,"imagem":"foto.jpg","id":"5427c68a-2ef2-4b13-bf7c-2ee741e047af"},{"id":"c1d7e10b-918d-4112-b0c3-d2f3ae508b66","nome":"Câmera 4k Ultra HD","descricao":"Podre","preco":39.9,"imagem":"camera preta véia podi"},{"nome":"Camisa azul com desenho de hashtag","id":"a04d17ca-e9d6-43fa-8c04-7560505e7783"},{"id":"8e4af74a-2e57-4bfe-a11d-5be0e2f782a0","nome":"Câmera 4k Ultra HD","descricao":"Podre","preco":39.9,"imagem":"camera preta véia podi"},{"nome":"Camisa azul com desenho de hashtag","id":"fb67af54-54e9-4275-95a8-72bfe77bf93a"},{"id":"9b4ef81a-db22-4f50-ae41-a823b918deca","nome":"Câmera 4k Ultra HD","descricao":"Podre","preco":39.9,"imagem":"camera preta véia podi"},{"nome":"Camisa azul com desenho de hashtag","id":"834be44b-5030-45f9-8be4-fed6729da658"},{"id":"eb71ee1e-9824-4034-beb8-5931f97db54d","nome":"Câmera 4k Ultra HD","descricao":"Podre","preco":39.9,"imagem":"camera preta véia podi"},{"nome":"Camisa azul com desenho de hashtag","id":"27cb7c29-cdec-4f17-90de-574cc4b4ad55"},{"id":"83e932ba-c6ea-42c4-9cf5-62c3f2dade78","nome":"Câmera 4k Ultra HD","descricao":"Podre","preco":39.9,"imagem":"camera preta véia podi"}],"clientes":[{"nome":"Robert Ocarlos","email":"robertao@gmail.com","senha":"$2a$10$smOTTUiPida00zqgBgvCguaY3EN3nv36KFCf9gvVteee6c4jTyaPy","id":"493c41f9-0634-4513-b211-0f31287c6157"}],"pedidos":[{"id":1,"cliente_id":1,"data_pedido":"2022-01-01","status":"pendente","itens":[{"produto_id":1,"quantidade":2,"preco_unitario":1500},{"produto_id":2,"quantidade":1,"preco_unitario":30}]},{"id":2,"cliente_id":2,"data_pedido":"2022-01-15","status":"entregue","itens":[{"produto_id":3,"quantidade":1,"preco_unitario":50}]}]}
+{
+    "produtos": [
+        {
+            "id": 2,
+            "nome": "Camiseta",
+            "descricao": "Camiseta de algodão",
+            "preco": 30,
+            "categoria_id": 2,
+            "imagem": "camiseta.jpg"
+        },
+        {
+            "id": 3,
+            "nome": "Vaso de Flores",
+            "descricao": "Vaso de flores decorativo",
+            "preco": 50,
+            "categoria_id": 3,
+            "imagem": "vaso_flores.jpg"
+        },
+        {
+            "nome": "produto teste",
+            "descricao": "uma descricao qualquer",
+            "preco": 600,
+            "imagem": "foto.jpg",
+            "id": "e8801215-9b11-4a43-b979-344afccbfcc9"
+        },
+        {
+            "nome": "produto teste2",
+            "descricao": "uma descricao qualquer",
+            "preco": 700,
+            "imagem": "foto.jpg",
+            "id": "fde550fa-7f2b-4560-bff7-5011f67b6757"
+        },
+        {
+            "nome": "produto teste2",
+            "descricao": "uma descricao qualquer",
+            "preco": 700,
+            "imagem": "foto.jpg",
+            "id": "cd3b9cb7-b563-44c0-93d0-d1fc538a5de6"
+        },
+        {
+            "nome": "produto teste2",
+            "descricao": "uma descricao qualquer",
+            "preco": 700,
+            "imagem": "foto.jpg",
+            "id": "5427c68a-2ef2-4b13-bf7c-2ee741e047af"
+        },
+        {
+            "id": "c1d7e10b-918d-4112-b0c3-d2f3ae508b66",
+            "nome": "Câmera 4k Ultra HD",
+            "descricao": "Podre",
+            "preco": 39.9,
+            "imagem": "camera preta véia podi"
+        },
+        {
+            "nome": "Camisa azul com desenho de hashtag",
+            "id": "a04d17ca-e9d6-43fa-8c04-7560505e7783"
+        },
+        {
+            "id": "8e4af74a-2e57-4bfe-a11d-5be0e2f782a0",
+            "nome": "Câmera 4k Ultra HD",
+            "descricao": "Podre",
+            "preco": 39.9,
+            "imagem": "camera preta véia podi"
+        },
+        {
+            "nome": "Camisa azul com desenho de hashtag",
+            "id": "fb67af54-54e9-4275-95a8-72bfe77bf93a"
+        },
+        {
+            "id": "9b4ef81a-db22-4f50-ae41-a823b918deca",
+            "nome": "Câmera 4k Ultra HD",
+            "descricao": "Podre",
+            "preco": 39.9,
+            "imagem": "camera preta véia podi"
+        },
+        {
+            "nome": "Camisa azul com desenho de hashtag",
+            "id": "834be44b-5030-45f9-8be4-fed6729da658"
+        },
+        {
+            "id": "eb71ee1e-9824-4034-beb8-5931f97db54d",
+            "nome": "Câmera 4k Ultra HD",
+            "descricao": "Podre",
+            "preco": 39.9,
+            "imagem": "camera preta véia podi"
+        },
+        {
+            "nome": "Camisa azul com desenho de hashtag",
+            "id": "27cb7c29-cdec-4f17-90de-574cc4b4ad55"
+        },
+        {
+            "id": "83e932ba-c6ea-42c4-9cf5-62c3f2dade78",
+            "nome": "Câmera 4k Ultra HD",
+            "descricao": "Podre",
+            "preco": 39.9,
+            "imagem": "camera preta véia podi"
+        }
+    ],
+    "clientes": [
+        {
+            "nome": "Robert Ocarlos",
+            "email": "robertao@gmail.com",
+            "senha": "$2a$10$smOTTUiPida00zqgBgvCguaY3EN3nv36KFCf9gvVteee6c4jTyaPy",
+            "id": "493c41f9-0634-4513-b211-0f31287c6157"
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "data_pedido": "2022-01-01",
+            "status": "pendente",
+            "itens": [
+                {
+                    "produto_id": 1,
+                    "quantidade": 2,
+                    "preco_unitario": 1500
+                },
+                {
+                    "produto_id": 2,
+                    "quantidade": 1,
+                    "preco_unitario": 30
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "cliente_id": 2,
+            "data_pedido": "2022-01-15",
+            "status": "entregue",
+            "itens": [
+                {
+                    "produto_id": 3,
+                    "quantidade": 1,
+                    "preco_unitario": 50
+                }
+            ]
+        }
+    ]
+}
