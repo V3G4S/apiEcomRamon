@@ -30,7 +30,7 @@ const createCliente = async (req,res) => {
             res.status(500).send({error:'erro no servidor'})
         }
     })
-    res.status(204).send()
+    return res.status(204).send()
 }
 const updateCliente = async (req,res) => {
     const _id = req.params.id

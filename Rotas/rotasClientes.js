@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
 const controlador = require('../Controladores/controladorClientes')
+const { validadorDeCookie } = require('../middlewares/validadorDeCookie')
 
-
-router.get('', controlador.listClientes)
-router.get('/:id', controlador.getCliente)
-router.post('', controlador.createCliente)
-router.post('/:id', controlador.updateCliente)
-router.delete('/:id', controlador.deleteCliente)
+router.get('', validadorDeCookie, controlador.listClientes)
+router.get('/:id', validadorDeCookie, controlador.getCliente)
+router.post('', validadorDeCookie, controlador.createCliente)
+router.post('/:id', validadorDeCookie, controlador.updateCliente)
+router.delete('/:id', validadorDeCookie, controlador.deleteCliente)
 
 module.exports = router;
