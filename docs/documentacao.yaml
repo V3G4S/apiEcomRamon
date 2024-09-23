@@ -1,0 +1,115 @@
+openapi: 3.0.3
+info:
+  title: Documentação
+
+paths:
+  /produtos:
+    get:
+      summary: Lista todos os produtos
+      responses:
+        '200':
+          description: Lista de produtos retornada com sucesso
+        '404':
+          description: Nenhum produto encontrado
+
+    post:
+      summary: Cria um novo produto
+      responses:
+        '201':
+          description: Produto criado com sucesso
+        '406':
+          description: Caso falte informação
+        '500':
+          description: Caso ocorra erro no servidor
+
+  /produtos/{id}:
+    get:
+      summary: Retorna um produto específico
+      responses:
+        '200':
+          description: Produto retornado com sucesso
+        '404':
+          description: Produto não encontrado
+
+    post:
+      summary: Atualiza um produto existente
+      responses:
+        '200':
+          description: Produto atualizado com sucesso
+        '404':
+          description: Produto não encontrado
+        '406':
+          description: Caso falte informação
+        '500':
+          description: Caso ocorra erro no servidor
+
+    delete:
+      summary: Deleta um produto existente
+      responses:
+        '204':
+          description: Produto deletado com sucesso
+        '404':
+          description: Produto não encontrado
+
+  /clientes:
+    get:
+      summary: Lista todos os clientes
+      responses:
+        '200':
+          description: Lista de clientes retornada com sucesso
+        '404':
+          description: Nenhum cliente encontrado
+
+    post:
+      summary: Cria um novo cliente
+      responses:
+        '201':
+          description: Cliente criado com sucesso
+        '406':
+          description: Caso faltem informações (email e senha)
+        '500':
+          description: Caso ocorra erro no servidor
+
+  /clientes/{id}:
+    get:
+      summary: Retorna um cliente específico
+      responses:
+        '200':
+          description: Cliente retornado com sucesso
+        '404':
+          description: Cliente não encontrado
+
+    post:
+      summary: Atualiza um cliente existente
+      responses:
+        '200':
+          description: Cliente atualizado com sucesso
+        '404':
+          description: Cliente não encontrado
+        '406':
+          description: Caso faltem informações
+        '500':
+          description: Caso ocorra erro no servidor
+
+    delete:
+      summary: Deleta um cliente existente
+      responses:
+        '204':
+          description: Cliente deletado com sucesso
+        '404':
+          description: Cliente não encontrado
+
+  /auth:
+    post:
+      summary: Faz o login do cliente e retorna um token JWT
+      responses:
+        '200':
+          description: Login bem-sucedido, token JWT retornado
+        '401':
+          description: Credenciais inválidas
+
+    delete:
+      summary: Faz o logout do cliente
+      responses:
+        '200':
+          description: Logout realizado com sucesso

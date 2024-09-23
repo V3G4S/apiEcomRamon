@@ -33,14 +33,26 @@ const createProduto = async (req,res) => {
 const updateProduto = async (req,res) => {
     const _id = req.params.id
     const dados = req.body
-    const listaProdutos = db.produtos
-    const produto = listaProdutos.find(
+    const lista_produtos = db.produtos
+    const produto = lista_produtos.find(
         (produto) => produto.id == _id
-        )
-    if (!produto || !dados) {
-        res.status(404).send({error:'not found'})
+    )
+    if (!produto || !dados){
+    return res.status(404).send({error: "not found"})
     }
-    // atualizar o produto
+    for(const dado in dados){
+     if(!(dado in produto)){
+         console.log('erro! esse dado não existe');
+            continue;
+       }
+       produto[dado] = dados[dado];
+    }
+    fs.writeFile('.db.json', JSON.stringify(db), (err) => {
+       if (err){
+           res.status(500).send({error:'erro no servidor'})
+       }
+    })
+    res.status(200).send({produto})
 }
 const deleteProduto = async (req,res) => {
     const _id = req.params.id
